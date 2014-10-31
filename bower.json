@@ -1,0 +1,29 @@
+{
+  "name": "public-interface",
+  "version": "0.0.1",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.16",
+    "bootstrap": "~3.1.1",
+    "angular-route": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "underscore": "~1.6.0",
+    "jquery.validation": "~1.13.0",
+    "morris.js": "~0.5.1",
+    "angular-cookies": "~1.2.19",
+    "angular-bootstrap": "latest",
+    "angular-mocks": "~1.2.21",
+    "socket.io": "~1.0.6",
+    "requirejs": "~2.1.14",
+    "angular-socket-io": "~0.6.0",
+    "socket.io-client": "~1.2.0"
+  }
+}

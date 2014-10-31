@@ -1,0 +1,36 @@
+<div class="container">
+    <!-- Login form -->
+    <form class="form-login form-wrapper form-narrow" ng-submit="login()">
+
+        <h4 class=""><span>Call the generate receiving address api</span></h4>
+
+        <div class="form-group">
+            <label class="" for="bitcoin-address">
+                <span>Bitcoin Address</span>
+                <span>(This is the bitcoin address you want to receive the payment to.)</span>
+            </label>
+            <input type="text" ng-model="stellar.bitcoinAddress" id="bitcoin-address" class="form-control email" placeholder="Bitcoin Address">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create Receiving Address</button>
+
+        <div ng-show="stellar.receivingAddress">
+            <div class="form-group">
+                <label class="" for="receiving-address">
+                    <span>Your Receiving Bitcoin Address </span>
+                    <span>(Where you would like the payment to be sent)</span>
+                </label>
+                <input type="text" ng-model="stellar.receivingAddress" id="receiving-address" class="form-control email" placeholder="Receiving Address">
+            </div>
+            <div class="form-group">
+                <label class="" for="amount">
+                    <span>Amount</span>
+                    <!--<span>(Number bitcoin address you want to receive the payment to.)</span>-->
+                </label>
+                <input type="number" ng-model="stellar.amount" id="amount" class="form-control email" placeholder="Amount">
+            </div>
+            <button type="button" class="btn btn-primary" ng-click="onSend()">Send</button>
+        </div>
+
+    </form>
+</div>
